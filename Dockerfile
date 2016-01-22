@@ -12,7 +12,7 @@ RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a
 ENV MARIADB_MAJOR 10.1
 ENV MARIADB_VERSION 10.1.10+maria-1~trusty
 
-RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubunty trusty main" > /etc/apt/sources.list.d/mariadb.list \
+RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/ubuntu trusty main" > /etc/apt/sources.list.d/mariadb.list \
     && { \
        	 echo 'Package: *'; \
 	      		echo 'Pin: release o=MariaDB'; \
